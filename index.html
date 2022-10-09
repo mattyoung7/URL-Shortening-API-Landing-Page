@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <container class="container">
+
+    <nav class="navbar">
+      <img class="nav-logo" src="images/logo.svg">
+      <button class="nav-hamburger" id="hamburger">
+        <span class="line line-one"></span>
+        <span class="line line-two"></span>
+        <span class="line line-three"></span>
+      </button>
+
+      <div class="nav-content" style="visibility: hidden;">
+        <div class="nav-links-main">
+          <ul class="nav-links">
+            <li class="nav-link"><a href="#">Features</a></li>
+            <li class="nav-link"><a href="#">Pricing</a></li>
+            <li class="nav-link"><a href="#">Resources</a></li>
+          </ul>
+        </div>
+
+        <hr class="nav-line">
+
+        <div class="nav-links-signup">
+          <ul class="nav-links">
+            <li class="nav-link"><a href="#">Login</a></li>
+            <button class="btn signup-btn">Sign Up</button>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <section class="header">
+      <div class="header-img-wrapper">
+        <img class="header-img" src="images/illustration-working.svg">
+      </div>
+      <div class="header-content">
+        <h1 class="header-title">More than just shorter links</h1>
+        <p class="subtext header-subtext">Build your brand’s recognition and get detailed insights
+          on how your links are performing.</p>
+        <button class="btn header-btn">Get Started</button>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="shorten-wrapper">
+        <div class="shorten-container">
+          <input class="shorten-input" placeholder="Shorten a link here...">
+          <button class="btn shorten-btn">Shorten It!</button>
+        </div>
+        <div class="appended-list">
+
+          <div class="appended-item">
+            <div class="appended-item-old">
+              <p class="link-old">https://www.frontendmentor.io</p>
+              <hr class="appended-line">
+            </div>
+            <div class="appended-item-new">
+              <a class="link-new" ref="https://rel.ink">https://rel.ink/7sgs6</a>
+              <button class="btn copy-btn">Copy</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <h2 class="details-title">Advanced Statistics</h2>
+      <p class="subtext details-subtext">Track how your links are performing across the web with our
+        advanced statistics dashboard.</p>
+
+      <div class="details-flex">
+        <div class="card card-one">
+          <div class="card-img-wrapper">
+            <img class="card-img card-one-img" src="images/icon-brand-recognition.svg">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Brand Recognition</h3>
+            <p class="card-subtext">Boost your brand recognition with each click. Generic links don't
+              mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+        </div>
+
+        <div class="card card-two">
+          <div class="card-img-wrapper">
+            <img class="card-img card-two-img" src="images/icon-detailed-records.svg">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Detailed Records</h3>
+            <p class="card-subtext">Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions.</p>
+          </div>
+        </div>
+
+        <div class="card card-three">
+          <div class="card-img-wrapper">
+            <img class="card-img card-three-img" src="images/icon-fully-customizable.svg">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Fully Customizable</h3>
+            <p class="card-subtext">Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2 class="cta-title">Boost your links today</h2>
+      <button class="btn cta-btn">Get Started</button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-flex">
+        <img class="footer-logo" src="images/logo-white.svg">
+        <div class="footer-main">
+
+          <ul class="footer-links">
+            <li class="footer-links-header">Features</li>
+            <li class="footer-links-item"><a href="#">Link Shortening</a></li>
+            <li class="footer-links-item"><a href="#">Branded Links</a></li>
+            <li class="footer-links-item"><a href="#">Analytics</a></li>
+          </ul>
+
+          <ul class="footer-links">
+            <li class="footer-links-header">Resources</li>
+            <li class="footer-links-item"><a href="#">Blog</a></li>
+            <li class="footer-links-item"><a href="#">Developers</a></li>
+            <li class="footer-links-item"><a href="#">Support</a></li>
+          </ul>
+
+          <ul class="footer-links">
+            <li class="footer-links-header">Company</li>
+            <li class="footer-links-item"><a href="#">About</a></li>
+            <li class="footer-links-item"><a href="#">Our Team</a></li>
+            <li class="footer-links-item"><a href="#">Careers</a></li>
+            <li class="footer-links-item"><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="footer-socials">
+            <a href="https://en-gb.facebook.com/"><img class="social-img" src="images/icon-facebook.svg"></a>
+            <a href="https://twitter.com/?lang=en"><img class="social-img" src="images/icon-twitter.svg"></a>
+            <a href="https://www.pinterest.co.uk/"><img class="social-img" src="images/icon-pinterest.svg"></a>
+            <a href="https://www.instagram.com/"><img class="social-img" src="images/icon-instagram.svg"></a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </container>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
