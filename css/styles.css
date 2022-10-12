@@ -129,6 +129,7 @@ button:hover {
 }
 .header .header-content .header-btn {
   width: 60%;
+  max-width: 240px;
   font-size: 20px;
   padding: 12px 0;
   border-radius: 28px;
@@ -202,10 +203,19 @@ button:hover {
   padding-bottom: 96px;
 }
 .details .details-flex {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 96px;
   overflow-x: visible;
+}
+.details .details-flex .details-line {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 4px);
+  height: 90%;
+  width: 8px;
+  background-color: hsl(180deg, 66%, 49%);
 }
 .details .details-flex .card {
   background-color: white;
@@ -215,6 +225,8 @@ button:hover {
   display: flex;
   justify-content: center;
   border-radius: 5px;
+  max-width: 400px;
+  margin: auto;
 }
 .details .details-flex .card .card-img-wrapper {
   background-color: hsl(257deg, 27%, 26%);
@@ -494,6 +506,15 @@ button:hover {
     max-width: 1110px;
     margin: auto;
     padding-bottom: 120px;
+  }
+  .details .details-flex .details-line {
+    top: 31%;
+    left: 10px;
+    height: 8px;
+    width: 90%;
+  }
+  .details .details-flex .card {
+    margin: 0;
   }
   .details .details-flex .card .card-img-wrapper {
     left: 32px;

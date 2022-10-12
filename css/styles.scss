@@ -163,6 +163,7 @@ button:hover {
 
         .header-btn {
             width: 60%;
+            max-width: 240px;
             font-size: 20px;
             padding: 12px 0;
             border-radius: 28px;
@@ -243,10 +244,20 @@ button:hover {
     }
 
     .details-flex {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 96px;
         overflow-x: visible;
+
+        .details-line {
+            position: absolute;
+            top: 10px;
+            left: calc(50% - 4px);
+            height: 90%;
+            width: 8px;
+            background-color: $cyan;
+        }
 
         .card {
             background-color: white;
@@ -256,6 +267,8 @@ button:hover {
             display: flex;
             justify-content: center;
             border-radius: 5px;
+            max-width: 400px;
+            margin: auto;
 
             .card-img-wrapper {
                 background-color: $dark-violet;
@@ -588,8 +601,16 @@ button:hover {
             margin: auto;
             padding-bottom: 120px;
 
-            .card {
+            .details-line {
+                top: 31%;
+                left: 10px;
+                height: 8px;
+                width: 90%;
+            }
 
+            .card {
+                margin: 0;
+                
                 .card-img-wrapper {
                     left: 32px;
                 }
