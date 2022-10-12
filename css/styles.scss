@@ -195,6 +195,17 @@ button:hover {
         flex-direction: column;
         gap: 16px;
 
+        .input-container {
+            display: flex;
+            flex-direction: column;
+
+            .error {
+                color: $red;
+                text-align: left;
+                padding-top: 5px;
+            }
+        }
+
         .shorten-input,
         .shorten-btn {
             border-radius: 5px;
@@ -519,7 +530,17 @@ button:hover {
             background-image: url(../images/bg-shorten-desktop.svg);
             background-size: cover;
             flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
             gap: 24px;
+
+            .input-container {
+                flex-grow: 1;
+
+                .error {
+                    padding-left: 64px;
+                }
+            }
 
             .shorten-input,
             .shorten-btn {
@@ -530,7 +551,6 @@ button:hover {
             .shorten-input {
                 font-size: 20px;
                 padding: 14px 32px;
-                flex-grow: 1;
                 margin-left: 64px;
             }
 
@@ -645,9 +665,9 @@ button:hover {
         border-radius: 5px;
 
         .appended-item-old {
-
+            word-break: break-all;
+            padding: 6px 16px;
             .link-old {
-                padding: 6px 16px;
                 line-height: 36px;
             }
 
@@ -691,9 +711,10 @@ button:hover {
             justify-content: space-between;
     
             .appended-item-old {
-    
+                padding: 0;
+                max-width: 52%;
+
                 .link-old {
-                    padding: 0;
                     line-height: 36px;
                 }
     
@@ -718,4 +739,8 @@ button:hover {
             }
         }
     }
+}
+
+.hidden {
+    display: none;
 }

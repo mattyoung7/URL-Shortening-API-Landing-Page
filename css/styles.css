@@ -158,6 +158,15 @@ button:hover {
   flex-direction: column;
   gap: 16px;
 }
+.details .shorten-container .input-container {
+  display: flex;
+  flex-direction: column;
+}
+.details .shorten-container .input-container .error {
+  color: hsl(0deg, 87%, 67%);
+  text-align: left;
+  padding-top: 5px;
+}
 .details .shorten-container .shorten-input,
 .details .shorten-container .shorten-btn {
   border-radius: 5px;
@@ -437,7 +446,15 @@ button:hover {
     background-image: url(../images/bg-shorten-desktop.svg);
     background-size: cover;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 24px;
+  }
+  .details .shorten-container .input-container {
+    flex-grow: 1;
+  }
+  .details .shorten-container .input-container .error {
+    padding-left: 64px;
   }
   .details .shorten-container .shorten-input,
 .details .shorten-container .shorten-btn {
@@ -447,7 +464,6 @@ button:hover {
   .details .shorten-container .shorten-input {
     font-size: 20px;
     padding: 14px 32px;
-    flex-grow: 1;
     margin-left: 64px;
   }
   .details .shorten-container .shorten-btn {
@@ -538,8 +554,11 @@ button:hover {
   background-color: white;
   border-radius: 5px;
 }
-.appended-list .appended-item .appended-item-old .link-old {
+.appended-list .appended-item .appended-item-old {
+  word-break: break-all;
   padding: 6px 16px;
+}
+.appended-list .appended-item .appended-item-old .link-old {
   line-height: 36px;
 }
 .appended-list .appended-item .appended-item-old .appended-line {
@@ -575,8 +594,11 @@ button:hover {
     align-items: center;
     justify-content: space-between;
   }
-  .appended-list .appended-item .appended-item-old .link-old {
+  .appended-list .appended-item .appended-item-old {
     padding: 0;
+    max-width: 52%;
+  }
+  .appended-list .appended-item .appended-item-old .link-old {
     line-height: 36px;
   }
   .appended-list .appended-item .appended-item-old .appended-line {
@@ -595,4 +617,7 @@ button:hover {
     font-size: 16px;
     margin-top: 0;
   }
+}
+.hidden {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

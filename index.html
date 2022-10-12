@@ -60,21 +60,13 @@
     <section class="details">
       <div class="shorten-wrapper">
         <div class="shorten-container">
-          <input class="shorten-input" placeholder="Shorten a link here...">
+          <div class="input-container">
+            <input class="shorten-input" placeholder="Shorten a link here...">
+            <p class="error hidden"><em>Please add a link</em></p>
+          </div>
           <button class="btn shorten-btn">Shorten It!</button>
         </div>
         <div class="appended-list">
-
-          <div class="appended-item">
-            <div class="appended-item-old">
-              <p class="link-old">https://www.frontendmentor.io</p>
-              <hr class="appended-line">
-            </div>
-            <div class="appended-item-new">
-              <a class="link-new" ref="https://rel.ink">https://rel.ink/7sgs6</a>
-              <button class="btn copy-btn">Copy</button>
-            </div>
-          </div>
           
         </div>
       </div>
@@ -163,7 +155,7 @@
     </footer>
 
   </container>
-
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>
 </body>
 
