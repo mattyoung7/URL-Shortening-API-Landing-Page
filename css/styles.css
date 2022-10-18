@@ -9,6 +9,10 @@
   font-weight: 700;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   width: 100%;
 }
@@ -638,7 +642,4 @@ button:hover {
     font-size: 16px;
     margin-top: 0;
   }
-}
-.hidden {
-  display: none;
 }/*# sourceMappingURL=styles.css.map */

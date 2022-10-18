@@ -24,6 +24,9 @@ $very-light-gray: #F2F2F2;
     font-weight: 700;
 }
 
+.hidden {
+    display: none;
+}
 
 body {
     width: 100%;
@@ -610,7 +613,7 @@ button:hover {
 
             .card {
                 margin: 0;
-                
+
                 .card-img-wrapper {
                     left: 32px;
                 }
@@ -688,6 +691,7 @@ button:hover {
         .appended-item-old {
             word-break: break-all;
             padding: 6px 16px;
+
             .link-old {
                 line-height: 36px;
             }
@@ -723,14 +727,14 @@ button:hover {
 @media screen and (min-width: 992px) {
     .appended-list {
         margin-top: 120px;
-    
+
         .appended-item {
             font-size: 20px;
             padding: 16px 24px 16px 32px;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-    
+
             .appended-item-old {
                 padding: 0;
                 max-width: 52%;
@@ -738,18 +742,18 @@ button:hover {
                 .link-old {
                     line-height: 36px;
                 }
-    
+
                 .appended-line {
                     display: none;
                 }
             }
-    
+
             .appended-item-new {
                 flex-direction: row;
                 align-items: center;
                 gap: 24px;
                 padding: 0;
-    
+
                 .copy-btn {
                     width: auto;
                     padding: 8px 31px;
@@ -760,8 +764,4 @@ button:hover {
             }
         }
     }
-}
-
-.hidden {
-    display: none;
 }
